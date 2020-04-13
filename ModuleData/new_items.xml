@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+  <Item multiplayer_item="false"
+        id="portable_artillery"
+        name="{=pzfbPbWW}Portable Artillery"
+        body_name="bo_projectile_rock"
+        holster_body_name="bo_axe_short"
+        mesh="projectile_rock"
+        holster_mesh=""
+        subtype="arrows"
+        weight="0.1"
+        difficulty="0"
+        appearance="1"
+        value="1000"
+        Type="Thrown"
+        item_holsters="throwing_stone:throwing_stone_2">
+    <ItemComponent>
+      <Weapon weapon_class="Boulder"
+              ammo_class="Boulder"
+              stack_amount="50"
+              position="0.05, -0.15, 0"
+              center_of_mass="0,0,0"
+              physics_material="boulder_stone"
+              thrust_speed="200"
+              speed_rating="200"
+              missile_speed="75"
+              weapon_length="95"
+              thrust_damage="300"
+              item_usage="heavy_stone"
+              flying_sound_code="event:/mission/combat/boulder/passby"
+              rotation_speed="2, 0.5, 0">
+        <WeaponFlags RangedWeapon="true"
+                     Consumable="true"
+                     CanPenetrateShield="true"
+                     MissileWithPhysics="true"
+                     UseHandAsThrowBase="true"
+                     LeavesTrail="true"
+                     AutoReload="true"
+                     AmmoCanBreakOnBounceBack="true"
+                     MultiplePenetration="true" />
+      </Weapon>
+    </ItemComponent>
+    <Flags
+      QuickFadeOut="true"
+      Civilian="true"
+    />
+  </Item>
+  <Item id="really_fast_stone"
+        name="{=1CPdu9K0}Really Fast Stone"
+        body_name="bo_throwing_stone"
+        holster_body_name="bo_axe_short"
+        holster_mesh="stone_holster"
+        holster_mesh_with_weapon="stone_holster"
+        mesh="throwing_stone"
+        value="1000"
+        weight="0.1"
+        appearance="1"
+        Type="Thrown"
+        item_holsters="throwing_stone:throwing_stone_2">
+    <ItemComponent>
+      <Weapon weapon_class="Stone"
+              ammo_class="Stone"
+              stack_amount="150"
+              physics_material="missile"
+              accuracy="80"
+              thrust_speed="500"
+              speed_rating="800"
+              missile_speed="500"
+              weapon_length="10"
+              thrust_damage="500"
+              item_usage="stone"
+              rotation="100,30,20"
+              flying_sound_code="event:/mission/combat/boulder/passby"
+              rotation_speed="0, -3.0, 0">
+        <WeaponFlags RangedWeapon="true"
+                     Consumable="true"
+                     AutoReload="true"
+                     UseHandAsThrowBase="true"
+                     CanPenetrateShield="true"
+                     MissileWithPhysics="true"
+                     />
+      </Weapon>
+    </ItemComponent>
+    <Flags />
+  </Item>
+  <Item multiplayer_item="false"
+        id="long_arrows"
+        name="{=6Db7aDbF}Long Arrows"
+        body_name="bo_ballista_projectile_a"
+        holster_body_name="bo_axe_short"
+        mesh="ballista_projectile_a"
+        holster_mesh="quiver"
+        subtype="arrows"
+        weight="0.1"
+        value="1000"
+        difficulty="0"
+        appearance="1"
+        Type="Arrows"
+        item_holsters="">
+    <ItemComponent>
+      <Weapon weapon_class="Arrow"
+              stack_amount="35"
+              physics_material="ballista_missile"
+              thrust_speed="0"
+              speed_rating="0"
+              missile_speed="100"
+              weapon_length="95"
+              thrust_damage="400"
+              thrust_damage_type="Pierce"
+              item_usage=""
+              flying_sound_code="event:/mission/combat/missile/foley/passby"
+              sticking_rotation="90,0,0"
+              sticking_position="0,-1.2,0"
+              center_of_mass="0,0,-0.3">
+        <WeaponFlags Consumable="true"
+                     AmmoSticksWhenShot="true"
+                     MultiplePenetration="true" />
+      </Weapon>
+    </ItemComponent>
+    <Flags />
+  </Item>
+  <Item multiplayer_item="false"
+        id="fiery_long_arrows"
+        name="{=6Db7aDbF}Fiery Long Arrows"
+        prefab="burning_ballista_projectile"
+        body_name="bo_ballista_projectile_a"
+        holster_body_name="bo_axe_short"
+        mesh="ballista_projectile_b"
+        holster_mesh="quiver"
+        subtype="arrows"
+        weight="0.1"
+        value="1000"
+        difficulty="0"
+        appearance="1"
+        Type="Arrows"
+        item_holsters="">
+    <ItemComponent>
+      <Weapon weapon_class="Arrow"
+              stack_amount="35"
+              physics_material="burning_ballista"
+              thrust_speed="0"
+              speed_rating="0"
+              missile_speed="100"
+              weapon_length="95"
+              thrust_damage="400"
+              thrust_damage_type="Pierce"
+              item_usage=""
+              flying_sound_code="event:/mission/combat/missile/foley/passby"
+              trail_particle_name="psys_game_missile_flame"
+              sticking_rotation="90,0,0"
+              sticking_position="0,-1.2,0"
+              center_of_mass="0,0,-0.3">
+        <WeaponFlags Consumable="true"
+                     AmmoSticksWhenShot="true"
+                     Burning="true"
+                     MultiplePenetration="true"
+                     LeavesTrail="true" />
+      </Weapon>
+    </ItemComponent>
+    <Flags />
+  </Item>
+  <Item
+        id="powerful_crossbow"
+        name="{=K1UFTirG}Powerful Crossbow"
+        body_name="bo_cross_bow_heavy"
+        mesh="crossbow_a"
+        culture="Culture.neutral_culture"
+        weight="0.1"
+        difficulty="0"
+        appearance="1"
+        Type="Crossbow"
+        value="1000"
+        AmmoOffset="0.0, 0.02131, 0.24650"
+        item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2"
+        holster_position_shift="0.02,0,-0.4">
+    <ItemComponent>
+      <Weapon weapon_class="Crossbow"
+              ammo_class="Arrow"
+              missile_speed="400"
+              accuracy="100"
+              thrust_damage="450"
+              thrust_speed="400"
+              speed_rating="400"
+              weapon_length="95"
+              ammo_limit="1"
+              thrust_damage_type="Pierce"
+              item_usage="crossbow_fast"
+              physics_material="wood_weapon"
+              center_of_mass="0,0,0.4">
+        <WeaponFlags RangedWeapon="true"
+                     HasString="true"
+                     NotUsableWithOneHand="true" />
+      </Weapon>
+    </ItemComponent>
+    <Flags UseTeamColor="true" />
+  </Item>
+
+  <Item
+        id="repeating_crossbow"
+        name="{=K1UFTirG}Repeating Crossbow"
+        body_name="bo_cross_bow_heavy"
+        mesh="crossbow_a"
+        weight="0.1"
+        difficulty="0"
+        appearance="1"
+        Type="Crossbow"
+        value="1000"
+        AmmoOffset="0.0, 0.02131, 0.24650"
+        item_holsters="crossbow_back:bow_hip:mace_right_hip:bow_hip_2"
+        holster_position_shift="0.02,0,-0.4">
+    <ItemComponent>
+      <Weapon weapon_class="Crossbow"
+              ammo_class="Arrow"
+              missile_speed="150"
+              accuracy="75"
+              thrust_damage="100"
+              thrust_speed="150"
+              speed_rating="150"
+              weapon_length="80"
+              ammo_limit="10"
+              thrust_damage_type="Pierce"
+              item_usage="crossbow_fast"
+              physics_material="wood_weapon"
+              center_of_mass="0,0,0.4">
+        <WeaponFlags RangedWeapon="true"
+                     HasString="true"
+                     NotUsableWithOneHand="true" />
+      </Weapon>
+    </ItemComponent>
+    <Flags UseTeamColor="true" />
+  </Item>
+</Items>
