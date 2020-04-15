@@ -229,4 +229,28 @@
     </ItemComponent>
     <Flags UseTeamColor="true" />
   </Item>
+
+  <CraftedItem id="mln_ball_crusher"
+               name="{=1HWRwbwT}Ball Crusher"
+              crafting_template="MlnBallCrusherTemplate"
+              value="100"
+              weight="0.2"
+              thrust_speed="15"
+              swing_speed="15"
+              thrust_damage="1000"
+              swing_damage="1000"
+              >
+    <Pieces>
+      <Piece id="mln_ball_crushing_blade"
+            Type="Blade"
+             />
+      <Piece id="wood_guard_1"
+             Type="Guard" />
+      <Piece id="wood_grip_1"
+             Type="Handle"
+             />
+      <Piece id="wood_pommel_1"
+             Type="Pommel" />
+    </Pieces>
+  </CraftedItem>
 </Items>
