@@ -13,6 +13,7 @@ Weapons :
 - Powerful Crossbow (Very powerful crossbow that shoots arrows)
 - Repeating Crossbow (Like the Powerful Crossbow but holds 10 ammo)
 - Ball Crusher (Most powerful wooden sword)
+- Pacifier (Flaming throwing rock with area damage. Also available to civilians.)
 
 The Ball Crusher is not available in stores but it is craftable. It is also accessible from the cheat menu.
 

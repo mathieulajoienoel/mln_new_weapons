@@ -2,7 +2,7 @@
 <Module>
 	<Name value="MLN New Weapons"/>
 	<Id value="MlnNewWeapons"/>
-	<Version value="v1.0.0"/>
+	<Version value="v1.3.0"/>
 	<DefaultModule value="false"/>
 	<SingleplayerModule value="true"/>
   <MultiplayerModule value="false"/>
@@ -20,9 +20,9 @@
     <XmlNode>
       <XmlName id="CraftingPieces" path="new_pieces"/>
       <IncludedGameTypes>
-        <GameType value = "Campaign"/>
-        <GameType value = "CampaignStoryMode"/>
-        <GameType value = "CustomGame"/>
+        <GameType value="Campaign"/>
+        <GameType value="CampaignStoryMode"/>
+        <GameType value="CustomGame"/>
       </IncludedGameTypes>
     </XmlNode>
     <XmlNode>

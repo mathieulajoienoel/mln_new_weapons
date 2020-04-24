@@ -253,4 +253,64 @@
              Type="Pommel" />
     </Pieces>
   </CraftedItem>
+
+  <Item
+      id="mln_pacifier"
+      name="Pacifier"
+      Type="Thrown"
+      mesh="throwing_stone"
+      holster_mesh="stone_holster"
+      holster_mesh_with_weapon="stone_holster"
+      flying_mesh="arrow_bl_flying"
+      body_name="bo_throwing_stone"
+      holster_body_name="bo_axe_short"
+      value="500"
+      weight="0.1"
+      difficulty="1"
+      appearance="1"
+      item_holsters="throwing_stone:throwing_stone_2"
+    >
+    <ItemComponent>
+      <Weapon
+        weapon_class="Stone"
+        ammo_class="Stone"
+        stack_amount="100"
+        thrust_speed="999"
+        speed_rating="999"
+        missile_speed="999"
+        thrust_damage="9999"
+        thrust_damage_type="Pierce"
+        accuracy="999"
+        item_usage="stone"
+        rotation="100,30,20"
+        passby_sound_code="event:/mission/combat/boulder/passby"
+        flying_sound_code="event:/mission/combat/boulder/passby"
+        trail_particle_name="psys_game_missile_flame"
+        weapon_length="10"
+        physics_material="missile"
+        rotation_speed="0, -3.0, 0"
+      >
+        <WeaponFlags
+          RangedWeapon="true"
+          Consumable="true"
+          AffectsArea="true"
+          Burning="true"
+          BonusAgainstShield="true"
+          CanPenetrateShield="true"
+          AutoReload="true"
+          CrushThrough="true"
+          MissileWithPhysics="true"
+          MultiplePenetration="true"
+          CanKnockDown="true"
+          LeavesTrail="true"
+          UseHandAsThrowBase="true"
+        />
+      </Weapon>
+    </ItemComponent>
+    <Flags
+      CanBePickedUpFromCorpse="true"
+      Civilian="true"
+    />
+  </Item>
+
 </Items>
